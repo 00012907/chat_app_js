@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="toggle_btn">
+        <button onclick="toggleMode()" class="toggle">Change Mode</button>
+    </div>
+    <div class="container">
+        <span class="name">
+            <p> <i class="fa-solid fa-user"></i> Teshavoy</p>
+            <i class="fa-solid fa-reply-all"></i>
+        </span>
+        <ul class="chat">
+            </ul>
+            <div class="textarea">
+                <input id="text" type="text" placeholder="Type a message..."/>
+                <div class="btns_send">
+                    <button class="client_1_send"><i class="fa-solid fa-location-arrow"></i></button>
+                    <button class="client_2_send"><i class="fa-solid fa-location-arrow"></i></button>
+                    <button class="update" onclick="update()"><i class="fa-solid fa-check"></i></button>
+                </div>
+            </div>
+    </div>
+    
+    <script src="./main.js"></script>
+</body>
+</html>

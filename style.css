@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    transition: ease 0.1s;
+}
+
+
+.container {
+    max-width: 600px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px 0;
+    letter-spacing: 2px;
+}
+
+span.name {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: darkslategrey;
+    border-radius: 6px 6px 0 0;
+    color: #fff;
+}
+
+.chat {
+    background-color: #121212;
+    height: 60vh;
+    padding: 20px 0;
+    overflow: auto;
+    color: white;
+    scroll-behavior: smooth;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+li {
+    border-radius: 6px;
+    display: flex;
+    padding: 1px 5px;
+    align-items: center;
+    background-color: darkslategrey;
+    justify-content: space-between;
+    margin: 10px 0;
+    width: 300px;
+    gap: 50px;
+}
+
+li i {
+    color: white;
+    padding: 0 4px;
+}
+
+li .btns {
+    display: flex;
+}
+
+li.client_1 {
+    border-radius: 0 6px 6px 15px;
+}
+
+li.client_2 {
+    border-radius: 6px 0 15px 6px;
+    float: right;
+    background-color: darkslateblue;
+}
+
+.textarea {
+    padding: 18px 10px;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0 0 6px 6px;
+    align-items: center;
+
+}
+
+.textarea input {
+    padding: 8px;
+    border-radius: 6px;
+    width: 420px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+}
+
+.update {
+    display: none !important;
+}
+
+.update.active {
+    display: block !important;
+}
+
+.textarea .btns_send {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.textarea .btns_send .client_1_send {
+    rotate: 270deg;
+}
+
+.textarea .btns_send button {
+    width: 33px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: darkslategrey;
+}
+
+.textarea .btns_send button:hover {
+    color: #fff;
+}
+
+.toggle {
+    padding: 7px 10px;
+    margin: 10px auto;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    background-color: darkslategrey;
+    outline: none;
+    border: none;
+    transition: 0.2s;
+}
+
+.toggle:hover {
+    background-color: black;
+}
+
+.chat.light {
+    background-color: #fff;
+}
+
+.textarea.light {
+    background-color: #fff;
+    color: black;
+}
+
+.textarea input.light {
+    color: #000;
+    border: 1px solid black;
+}
